@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url(GOOBERRR.png) no-repeat center center fixed;
+    background-size: cover;
+    color: #e0f7fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c2c34;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #90c8df;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    color: #3053f0;
+}
+.splide__slide img {
+    width: 100%;
+    height: auto;
+  }
+
+main {
+    width: 90%;
+    max-width: 800px;
+}
+
+section {
+    background-color: #333;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h3 {
+    color: #90c8df;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+footer {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #2c2c34;
+    color: #f5f5f5;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header h2 {
+        font-size: 2rem;
+    }
+}
+
+.youtube-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #00bcd4;  /* Light blue button color */
+    color: #000;  /* Black text color for contrast */
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.youtube-button:hover {
+    background-color: #80deea;  /* Lighter blue on hover */
+}
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-animation.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
